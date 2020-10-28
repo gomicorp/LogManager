@@ -9,7 +9,7 @@ APP_NAME=$2
 LOG_BUCKET="s3://log.gomi.cloudwatch"
 TIME_STAMP=$(date "+%Y%m%d%H")
 
-TARGET_PATH=$1
+TARGET_PATH="$1"
 TARGET_FILE=${TARGET_PATH##*/}
 TARGET_DIR=${TARGET_PATH%"$TARGET_FILE"}
 
